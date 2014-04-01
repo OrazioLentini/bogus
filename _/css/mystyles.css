@@ -1,0 +1,86 @@
+/*
+#info {
+    float: left;
+    width: 75%;
+    max-width: 45%;
+}
+*/
+#image {
+    float: left;
+}
+
+#videolist img {
+	display: block;
+	width: 90%;
+	float: left;
+}
+
+#videolist h3 {
+    margin: 15px 0 5px 0;
+    height: 35px;
+    overflow: hidden;
+    font-size: 1em;
+    
+}
+
+#videolist img {
+    width: 90%;
+}
+
+#videolist a {
+	text-decoration: none;
+	color: #777;
+}
+
+#videoplayer .ui-content {
+	margin: 0;
+	padding: 0;
+}
+
+#videoplayer iframe {
+	width: 100%;
+	min-height: 50%;
+}
+
+#videoplayer h3, #myplayer p {
+	padding: 0 5%;
+}
+
+.nav-glyphish-example .ui-btn .ui-btn-inner { padding-top: 40px !important; }
+.nav-glyphish-example .ui-btn .ui-icon { width: 30px!important; height: 30px!important; margin-left: -15px !important; box-shadow: none!important; -moz-box-shadow: none!important; -webkit-box-shadow: none!important; -webkit-border-radius: 0 !important; border-radius: 0 !important; }
+    #house .ui-icon { background:  url(../../images/house.png) 50% 50% no-repeat; color: white; background-size: 24px 22px; }
+    #star .ui-icon { background:  url(../../images/star.png) 50% 50% no-repeat; color: white; background-size: 24px 22px; }
+    #info .ui-icon { background:  url(../../images/info.png) 50% 50% no-repeat; color: white; background-size: 24px 22px; }
+    #addf .ui-icon { background:  url(../../images/favs.png) 50% 50% no-repeat; color: white; background-size: 24px 22px; }
+    #lists .ui-icon { background:  url(../../images/list.png) 50% 50% no-repeat; color: white; background-size: 24px 22px; }
+    #setting .ui-icon { background:  url(../../images/settings.png) 50% 50% no-repeat; color: white; background-size: 24px 22px; }
+    #refresh .ui-icon { background:  url(../../images/refresh.png) 50% 50% no-repeat; color: white; background-size: 24px 22px; }
+    #about .ui-icon { background:  url(../../images/about.png) 50% 50% no-repeat; color: white; background-size: 24px 22px; }
+    #delete .ui-icon { background:  url(../../images/delete.png) 50% 50% no-repeat; color: white; background-size: 24px 22px; }
+    
+    
+@media (min-width:35em){
+    /* wrap on wide viewports once open */
+    .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push.ui-panel-content-fixed-toolbar-position-left,
+    .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal.ui-panel-content-fixed-toolbar-position-left,
+    .ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-push.ui-panel-content-wrap-position-left,
+    .ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-reveal.ui-panel-content-wrap-position-left {
+	margin-right: 17em;
+    }
+    .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push.ui-panel-content-fixed-toolbar-position-right,
+    .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal.ui-panel-content-fixed-toolbar-position-right,
+    .ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-push.ui-panel-content-wrap-position-right,
+    .ui-responsive-panel.ui-page-panel-open .ui-panel-content-wrap-display-reveal.ui-panel-content-wrap-position-right {
+	margin-left: 17em;
+    }
+    .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-push,
+    .ui-responsive-panel.ui-page-panel-open .ui-panel-content-fixed-toolbar-display-reveal {
+	width: auto;	
+    }
+    
+    /* disable "dismiss" on wide viewports */
+    .ui-responsive-panel .ui-panel-dismiss-display-push {
+	display: none;
+    }
+}
+	

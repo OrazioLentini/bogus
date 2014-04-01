@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html class="ui-mobile-rendering">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            
+        <link rel="stylesheet" href="_/css/theme.css"/>
+        <link rel="stylesheet" href="_/css/structure.css" />
+	
+	<script src="_/js/jquery.js"></script>
+	<script src="_/js/jquery.mobile.js"></script>
+
+	<script src="_/js/myscript.js"></script>
+	<link rel="stylesheet" href="_/css/mystyles.css" />
+    </head>
+
+<body>
+
+<!--------------------------------------- HOME ----------------------------------------------------------------------->
+    <div id="home" data-role="page" data-theme="d" data-title="HOME">
+        
+        <div data-role="header" data-theme="d" data-position="fixed" data-id="HOME" data-position="fixed">
+            <h1>BOGUS</h1>  
+            <a href="#menu" class="jqm-navmenu-link" data-theme="d" data-role="button" data-icon="bars" data-iconpos="notext">Navigation</a>
+         
+            <input id="searchGame" type="search" name="search" value="" class="but" placeholder="Search For Game..."/>
+            <div id="searchbutton" data-role="controlgroup" data-type="horizontal">
+                <a href="#results" input type="button"  data-inline = "true"  value="Search Games" onclick="getGameList()">Search Game</a>
+	    </div>
+         
+        </div><!--Header-->
+	
+	<!-- <a href="" input type="button"  data-inline = "true"  value="Search Games" onclick="newRelease()">Search Game</a> -->
+        
+	<div id="releases" data-role="content">
+		  <ul data-role="listview">
+		  </ul>
+	</div>
+
+        <div data-role="panel" id="menu" data-position="left" data-display="push" data-theme="d">
+	    <ul data-role="listview">
+                <li><a href="#home" data-icon="back">Home</a></li>
+                <p><li data-role="list-divider">Search</li></p>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#gameInfo">Game Information</a></li>
+                <p><li data-role="list-divider">Options</li></p>
+                <li><a href="#shome">Home</a></li>
+            </ul>
+        </div><!--menu-->
+            
+    </div><!--Page-->
+    
+<!--------------------------------------- RESULTS ----------------------------------------------------------------------->
+    <div id="results" data-role="page" data-theme="d" data-title="Results" data-position="fixed">
+         <div data-role="header" data-position="fixed" data-id="HOME">
+            <h1>Search Results</h1>  
+            <a href="#menu" class="jqm-navmenu-link" data-theme="d" data-role="button" data-icon="bars" data-iconpos="notext">Navigation</a>
+         </div>
+         
+         <div id="gameResults" data-role="content">
+		  <ul data-role="listview">
+		  </ul>
+	 </div>
+         
+         <div data-role="panel" id="menu" data-position="left" data-display="push" data-theme="d">
+	    <ul data-role="listview">
+                <li><a href="#home" data-icon="back">Home</a></li>
+                <p><li data-role="list-divider">Search</li></p>
+                <li><a href="#results">Results</a></li>
+                <li><a href="#gameInfo">Game Information</a></li>
+                <p><li data-role="list-divider">Options</li></p>
+                <li><a href="#shome">Home</a></li>
+            </ul>
+        </div><!--menu-->
+    </div>
+    
+<!--------------------------------------- GAME INFO ----------------------------------------------------------------------->
+    <div id="gameInfo" data-role="page" data-theme="d" data-title="Results" data-position="fixed">
+       <div data-role="header" data-position="fixed" data-id="gameInfoPage">
+          <h1>Game Information</h1>  
+          <a href="#menu" class="jqm-navmenu-link" data-theme="d" data-role="button" data-icon="bars" data-iconpos="notext">Navigation</a>
+       </div>
+       
+       <div data-role="content" id="image">
+        
+       </div>
+       
+       <div data-role="content" id="info">
+        
+       </div>
+       
+       <div data-role="content">
+	    <div class="ui-grid-a" id="videolist">
+		    
+	    </div>
+       </div>
+       
+       <div data-role="content" id="images">
+	    <ul class="gallery">
+		
+	    </ul>
+        
+       </div>
+        
+       <div data-role="panel" id="menu" data-position="left" data-display="push" data-theme="d">
+          <ul data-role="listview">
+              <li><a href="#home" data-icon="back">Home</a></li>
+              <p><li data-role="list-divider">Search</li></p>
+              <li><a href="#results">Results</a></li>
+              <li><a href="#gameInfo">Game Information</a></li>
+              <p><li data-role="list-divider">Options</li></p>
+              <li><a href="#shome">Home</a></li>
+          </ul>
+      </div><!--menu-->
+    </div>
+    
+    <div id="videoplayer" data-role="page">
+	<div data-role="header" data-position="fixed" data-theme="d">
+		<a href="#gameInfo" data-transition="fade" data-icon="back" data-iconpos="notext" data-direction="reverse">Videos</a>
+		<h1>GamePlay</h1>
+	</div><!-- header -->
+	<div data-role="content">
+		<div id="myplayer"></div>
+	</div><!-- content -->
+    </div><!-- page -->
+
+
+</body>
+
+
+ <!-- <script src="http://www.giantbomb.com/api/search/?api_key=a2a8dfb93f306b41ba5edd9eae9b48ee43593e8c&query=starcraft&field_list=name%2Cplatforms%2Cid%2Cimage&resources=game&format=jsonp&json_callback=releases&_=1376379030098" type="text/javascript"></script> -->
+ <!-- <script src="http://www.giantbomb.com/api/releases/?api_key=a2a8dfb93f306b41ba5edd9eae9b48ee43593e8c&limit=10&platforms=17&sort=release_date:desc&filter=release_date:2012-01-01%2000:00:00|2012-03-01%2000:00:00&field_list=name%2Cid%2Cimage%2Crelease_date%2Cplatform&resources=game&format=jsonp&json_callback=releases&_=1376409294637 type="text/javascript"></script> -->
+ <!-- <script src="http://www.giantbomb.com/api/releases/?api_key=a2a8dfb93f306b41ba5edd9eae9b48ee43593e8c&limit=10&platforms=17&filter=date_added:2012-01-01%2000:00:00&field_list=name%2Cid%2Cimage%2Crelease_date%2Cplatform&resources=game&format=jsonp&json_callback=releases&_=1376409294637 type="text/javascript"></script> -->
+
+
+
+
+</html>
